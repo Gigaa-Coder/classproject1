@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+<style>
+    body {
+        background-color: silver;
+    }
+
+    * {
+        margin: 0
+    }
+
+    .head_1 {
+        display: flex;
+        width: 60vw;
+        margin: 0 auto;
+        border-bottom-style: solid;
+        border-width: 0 0 1px 0;
+        border-color: white;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black
+    }
+
+    .head_elms {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+
+    }
+
+    #head_i {
+        display: flex;
+        border-left-style: solid;
+    }
+
+    #head_a {
+        display: flex;
+        align-items: center;
+    }
+
+    .header_2 {
+        display: flex;
+        justify-content: end;
+    }
+
+    .header_3 {
+        width: 60vw;
+        margin: 0 auto;
+        height: 120px;
+        margin-right: 0;
+
+    }
+
+    #header_2_elm {
+        font-weight: 650;
+        font-size: 1.5rem;
+    }
+
+    header {
+        display: flex;
+        width: 70vw;
+        margin: 0 auto;
+        background-color: black;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .head_4 {
+        width: 70px;
+        height: 77px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .container_1 {
+        width: 100vw;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-rows: 545px 545px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .one {
+
+        grid-column: span 4;
+        /* animation:myanim 6s infinite; */
+        color: azure;
+        background-color: black;
+        position: relative;
+    }
+
+    .img {
+        object-fit: cover;
+    }
+
+    @keyframes myanim {
+        0% {
+            transform: scale(0.5);
+        }
+
+        50% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0.5);
+        }
+    }
+
+    .two {
+        grid-column: span 2;
+        background-color: black;
+    }
+
+    .three {
+        grid-column: span 2;
+        background-color: green;
+    }
+
+    #p1 {
+        width: 100%;
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+        font-family: monospace;
+        border-right: 5px solid;
+
+        white-space: nowrap;
+        overflow: hidden;
+        animation:
+            typing 5s steps(37) infinite,
+            cursor .5s step-end infinite alternate;
+    }
+
+    #p2 {
+        width: 100%;
+        font-size: 1.25rem;
+        letter-spacing: 10px;
+        font-family: monospace;
+        border-right: 5px solid;
+
+        white-space: nowrap;
+        overflow: hidden;
+        animation:
+            typing 5s steps(31) infinite,
+            cursor .5s step-end infinite alternate;
+    }
+
+    .one_one {
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100
+        }
+    }
+
+    .one_two {
+        margin: auto;
+        width: 662px;
+        height: 496px;
+        ;
+        background-image: url("bmw_3.png");
+        background-size: cover;
+        background-position: center;
+        animation: myanim 6s infinite;
+    }
+
+    .two {
+        position: relative;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .two_two {
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        color: white;
+    }
+
+    .three {
+        position: relative;
+        background-color: black;
+    }
+
+    .three_two {
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        color: white;
+    }
+
+    #p3 {
+        width: 100%;
+        font-size: 1.25rem;
+        letter-spacing: 10px;
+        font-family: monospace;
+        border-right: 5px solid;
+
+        white-space: nowrap;
+        overflow: hidden;
+        animation:
+            typing 5s steps(37) infinite,
+            cursor .5s step-end infinite alternate;
+    }
+
+    .two_one {
+        width: 100%;
+        height: 100%;
+        background-image: url("bmw4.jpg");
+        background-size: cover;
+        background-position: center;
+        animation: myanim 6s infinite;
+    }
+
+    .three_one {
+        width: 100%;
+        height: 100%;
+        background-image: url("bmw5.jpg");
+        background-size: cover;
+        background-position: center;
+        animation: myanim 6s infinite;
+    }
+
+    .container_2 {
+        height: 432px;
+        margin: 1rem 0;
+        display: grid;
+        grid-template-rows: 432px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .conty_1 {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 0;
+    }
+
+    #p4 {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .conty_2 {
+        background-color: whitesmoke;
+        text-align: center;
+        font-size: 3rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    .conty_2_2 {
+        background-color: whitesmoke;
+        width: 641px;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .btn {
+        width: 136.8px;
+        height: 46px;
+        padding: 0 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        margin-top: 10px;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: large;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: black;
+
+    }
+
+    .btn_2 {
+        width: 350px;
+        height: 50px;
+        padding: 0 20px;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+        border: 1px solid black;
+
+
+
+    }
+
+    .btn_2:hover {
+        background-color: black;
+        color: white;
+    }
+
+    footer {
+        /* height: 742.8px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    .container_3 {
+        width: 1280;
+        height: 652.8px;
+        display: flex;
+        flex-direction: column;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal; 
+        color:grey;
+    }
+
+    .se {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom:20px;
+    }
+
+    .head {
+        width: 163.32;
+        height: 32.8px;
+    border-bottom:1px solid grey;
+    }
+    .fi{ 
+        width:60%;
+        display:flex;
+        justify-content: space-between;
+    }
+    .col_body{
+        margin:0 10px 0 10px;
+    }
+    .links:hover{
+        color:white;
+    }
+    a{color:grey;
+    text-decoration: none;}
+    a:hover{color:white;
+    }
+    a:active{color:grey;
+    }
+    li{
+       margin-bottom:2px;
+    }
+   li:hover{
+    /* animation:tilt 4s infinite ; */
+   }
+    @keyframes tilt{
+        0%{transform:rotate(0deg)}
+        25%{transform:rotate(-45deg)}
+        50%{transform:rotate(0deg)}
+        75%{transform:rotate(45deg)}
+        100%{transform:rotate(0deg)}
+    }
+    .empty{
+        width:50px;
+        height:100px;
+    }
+</style>
+
+<body>
+    <!-- purpose of div outsider header is to add color to website -->
+    <div style="background-color: black;">
+        <header>
+            <!-- header third -->
+            <div class="header_3">
+                <!--header 1st  -->
+                <div class="head_1">
+                    <div class="head_elms">Home</div>
+                    <div class="head_elms">Circular World</div>
+                    <div class="head_elms">Digital Journey</div>
+                    <div class="head_elms">Electric Future</div>
+                    <div class="head_elms">Freude</div>
+                    <div class="head_elms">Models</div>
+                    <!-- 7th div containing two divs -->
+                    <div id="head_a">
+                        <div><img src="search.png" width="30px" height="30px"></div>
+                        <div class="head_elms" id="head_i"><img style="align-self:center;" src="circle.png" width="30px"
+                                height="30px">
+                            <p style="display:inline">BMW in your Country</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header_2">
+                    <div id=header_2_elm class="head_elms">
+                        <p>Sheer driving Pleasure</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 div -->
+            <div class="head_4">
+                <div> <img src="bmw.webp" width="70px" height="70px"></div>
+
+            </div>
+
+
+        </header>
+    </div>
+    <!-- Container 1 -->
+    <div class="container_1">
+        <div class="one"><!--<img class="img" src="bmw_1.jpg" height="545px;"> -->
+            <div class="one_two"></div>
+            <div class="one_one">
+                <h1>BMW skytop</h1>
+                <p id="p1">The fusion of tradition and modernity.</p>
+                <button type="button" class="btn">Read More</button>
+            </div>
+
+
+        </div>
+        <div class="two">
+            <div class="two_one"></div>
+            <div class="two_two">
+                <h1>BMW art Car #20</h1>
+                <p id="p2">Julie Mehretu-dynamics in form.</p>
+                <button type="button" class="btn">Read More</button>
+            </div>
+        </div>
+
+
+        <div class="three">
+            <div class="three_one"></div>
+            <div class="three_two">
+                <h1>The BMW XM Mystique Allure</h1>
+                <p id="p3">Tailored-with high fashion materials.</p>
+                <button type="button" class="btn">Read more</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- container 2 -->
+    <div class="container_2">
+        <div class="conty_1">
+            <video width="641px" style="margin:0" height="353px" src="bmw.mp4" autoplay muted infinite></video>
+        </div>
+        <div class="conty_2">
+            <div class="conty_2_2">
+                <p id="p4">Learn Everything<br>
+                    about BMW here</p>
+                <a href="https://www.bmw.com/en/bmw-explained.html"><button class="btn_2">BMW Explained</button></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- container 3 -->
+    <footer>
+        <div class="container_3">
+            <div class="fi  ">
+                <div class="links">English</div>
+                <div class="links">Deutsch</div>
+                <div class="links">Italiano</div>
+                <div class="links">Français</div>
+                <div class="links"> Español</div>
+                <div class="links">日本語 </div>
+            </div>
+
+            <div class="se">
+                <!-- col 1 -->
+                <div class="col1">
+                    <div class="head">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <div class="col_body ">
+                        <ul>
+
+                            <li class="links"><a href="#" style="text-decoration: none;">Home</a></li>
+                            <li class="links"><a href="https://www.bmw.in/en/index.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-footer">BMW Group Careers</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/eu-detergents-regulation/eu-detergents-overview.html">BMW in your country</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/reach-campaign.html">EU Detergents <br>Regulation</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/software-updates.html">REACH Regulation</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/software-updates.html">Compatibility Check</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/software-updates.html">Software Update</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/accessories-updates.html">Accessories Update</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/connectedtestvehicles/connectedtestvehicle-overview.html">Connected Test <br>Vehicle</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/index.html">Service Page Charging <br>Products</a></li>
+                            <li class="links"><a href="https://www.bmw.com/en/footer/cooperationtestcar/cooperationtestcar-overview.html">Cooperation Test Car</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="empty div"></div>
+
+                <div class="col2">
+                    <div class="head">
+                        <h3>More BMW Websites</h3>
+                    </div>
+                    <div class="col_body ">
+                        <li class="links">BMW M</li>
+                        <li class="links">BMW M Motorsport</li>
+                        <li class="links">BMW Golfsport</li>
+                        <li class="links">BMW M Driving Experience</li>
+                        <li class="links">BMW Welt</li>
+                        <li class="links">BMW Group Classic</li>
+                        <li class="links">BMW Corporate/Direct Sales</li>
+                        <li class="links">BMW Group</li>
+                        <li class="links">BMW Group Culture</li>
+                        <li class="links">BMW ConnectedDrive Upgrade</li>
+                    </div>
+                </div>
+                <div class="empty div"></div>
+
+                <div class="col3">
+                    <div class="head">
+                        <h3>BMW.COM</h3>
+                    </div>
+
+                    <div class="col_body ">
+                        <ul>
+                            <!-- More BMW Websites -->
+                            <li class="links">About BMW.com</li>
+                            <li class="links">Contact</li>
+                            <li class="links">Cookies</li>
+                            <li class="links">Imprint</li>
+                            <li class="links">Legal Notice/Data Protection </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="empty div"></div>
+
+                <div class="col4">
+                    <div class="head">
+                        <h3>Visit us on</h3>
+                    </div>
+                    <div class="col_body ">
+                        <li class="links">Facebook</li>
+                        <li class="links">X</li>
+                        <li class="links">Instagram</li>
+                        <li class="links">Youtube</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="th">©️BMW AG 2024</div>
+
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
